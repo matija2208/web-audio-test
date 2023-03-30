@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form action="/api/song/" enctype="multipart/form-data" method="POST"> 
-        <input type="file" name="audio" />
-        <br>
-        <input type="submit" value="Upload a file"/>
-     </form>
+<body onload="load()">
+    <div id = "container">
+
+    </div>
+
+    <button onclick="location.href='./upload/upload.html'">"upload"</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
